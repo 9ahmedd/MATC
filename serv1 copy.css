@@ -1,0 +1,134 @@
+:root {
+    --transition: 0.5s;
+    --color-one: #095b6b;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+font-family: 'Cairo', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #51050F, #ff4838);
+} */
+
+/* CONTAINER........................... */
+/* .container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 760px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+} */
+.serv1 {
+    background-image: url(/images/background.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+   
+ 
+   
+}
+.serv1 h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.serv1 h1 span {
+    color: var(--color-one);
+    position: relative;
+}
+h1 span::before {
+    content: "";
+    position: absolute;
+    background-image: url(/images/shape-4.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 13px;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+}
+.serv1 p {
+    font-size: 30px;
+}
+.serv1 .a-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    gap: 50px;
+    
+   
+}
+.imgs {
+    display: flex;
+   
+}
+
+
+.a-boxes img {
+    width: 195px;
+    height: 195px;
+}
+
+a button {
+ margin-right: 80px;
+    padding: 20px 25px;
+    background-color: #095b6b;
+    color: white;
+    border: 1px solid var(--color-one);
+    border-radius: 50px;
+    /* font-weight: bold; */
+    font-size: 30px;
+   transition: 0.3s !important;
+   margin-bottom: 30px;
+}
+a button:hover {
+    background-color: #043039;
+
+}
